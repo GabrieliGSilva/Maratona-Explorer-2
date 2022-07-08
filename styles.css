@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    /*criando variáveis*/
+    --bg-color:rgba(230, 226, 226, 0.277);
+    --text-colocar:#1C1C1C;
+  }
+  
+  a{
+    text-decoration: none; /*retirando decorações das palavras da lista*/
+  }
+  
+  body.blue{
+    --bg-color:rgba(180, 174, 243, 0.459);
+    --text-colocar:#ece4e4;
+  }
+  
+  body.yellow{
+    --bg-color:rgba(204, 156, 11, 0.599);
+    --text-colocar:rgba(46, 22, 9, 0.599);
+  }
+  
+  
+  body{
+    background-image: url(https://images4.alphacoders.com/594/594600.jpg);
+    /*background: #D3D3D3*/;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-colocar);
+  }
+  div{
+    border: 3px #8d8b8b solid;
+    padding: 30px;
+    border-radius: 30px;
+    /*background: #f1efef*/;
+    
+  }
+  .container{
+   /* border: 7px red solid; criando uma borda para referencia*/
+    background: var(--bg-color);
+    text-align: center; /*centralizando o texto*/
+    width: 300px; /*largura da borda*/
+    margin: 60px auto; /*centralizando a borda*/
+  
+  }
+  
+  img{
+    width: 100%; /*tamanho da imagem dentro do container*/
+    width: 100px;
+    height: 100px;
+    padding: 3.7px;
+    border: 4px 	#0c0c0cad solid ;
+  }
+  
+  img.avatar{
+    border-radius: 50%;
+  }
+  
+  h1{
+    font-size: 32px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    
+  }
+  
+  
+  .usarname{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    opacity: 0.8;
+    font-size: 18px;
+  }
+  ul{
+    list-style: none;/*retirano o estilo da lista*/
+    margin: 48px 0;
+  }
+  
+  
+  ul li a{
+    height: 53px;
+    display: flex; /*destravando a "caixa" dos elementos da lista permitindo config*/
+    align-items: center;/*alinhando os itens no centro*/
+    justify-content: center; /*centralizando conteúdo da lista*/
+    background: 	#0c0c0cad;
+    color: #e4e1e1;
+    text-transform: uppercase; /*transformar tudo em caixa alta*/
+    font-size: 14px;
+  
+    margin-bottom: 16px; /* separando uma margem da outra*/
+    border-radius: 6px ; /*arredondando as bordas da margem*/
+  
+    transition: background 400ms; /*transição ao trocar de background*/
+  }
+  
+  /* psedo-class = realizar ações*/
+  ul li a:hover{ /*trocar de cor ao passar o mouse em cima*/
+    background: 	#5f5d5d;
+  }
+  
+  footer{
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.8;
+    transition: opacity 400ms;
+  }
+  
+  footer:hover{
+    opacity: 1;
+  }
+  footer a{
+    color: #191970;
+  }
